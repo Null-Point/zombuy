@@ -1,0 +1,363 @@
+.nes{
+    width: 1200px;
+    margin:20px auto;
+    overflow: hidden;
+}
+.nesOne{
+    position: relative;
+    z-index: 999999999999999;
+}
+.nes div{
+    float: left;
+}
+/*第二块的设置*/
+.nesTwo{
+    margin-left: 20px;
+}
+.nesTwo h3{
+    font-size:16px;
+    font-weight: 600;
+}
+.nesTwoNews{
+    background: #f7f7f7;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    /*z-index: -100;*/
+}
+/*修改newTwoNews里面的span上下的距离*/
+.nesTwoNews span{
+  line-height: 30px;
+}
+/*显示微信图片*/
+.weixin_code{
+    position: absolute;
+    top:70px;
+    left: 154px;
+    display: none;
+}
+.nesTwoNews i{
+    font-size: 16px;
+    font-weight: 600;
+    color: #e4393c;
+}
+/*购物车的按钮设置*/
+#leftBuy{
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    background: #f9e5c8;
+    color: #e4393c;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+#rightBuy{
+    display: inline-block;
+    font-size: 16px;
+    width: 140px;
+    height: 40px;
+    background: #e23435;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.youhuo{
+    font-size: 14px;
+    font-weight: 600;
+}
+.fenxiang{
+    margin-left: 150px;
+}
+.fenxiang i{
+   display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../shoppingCartCssImages/fx.png) no-repeat 0 3px;
+}
+.shoucang i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../shoppingCartCssImages/shoucang.png) no-repeat 0 3px;
+}
+.shoucang{
+    margin-left: 20px;
+}
+.duibi{
+    outline: none;
+    margin-left: 20px;
+}
+/*相关分类的设计*/
+.classify .classifyOne,.classify .classifyTwo{
+    float: left;
+    overflow: hidden;
+}
+.classify {
+  width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*左边第一行的设计*/
+.classifyOne_one{
+    border: 1px solid #dcdcdc;
+    padding: 0 10px;
+    width: 188px;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+/*左边第二个设计*/
+.classifyOne_two{
+    border: 1px solid #dcdcdc;
+    padding: 0 10px;
+    width: 188px;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+/*左边第三个设计*/
+.classifyOne_three{
+   width: 210px;
+    border: 1px solid #dcdcdc;
+}
+.classifyOne_three li{
+  float: left;
+}
+.classifyOne_three li a{
+    display: inline-block;
+    padding:0 22px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #dcdcdc;
+}
+/*商品具体设计*/
+.shangpinjuti{
+    width: 188px;
+    border: 1px solid #dcdcdc;
+    /*height: 100px;*/
+    border-top: 0;
+    padding: 10px;
+}
+.shangpinjuti .shuzi{
+    margin-top: 15px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #e4393c;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    float: left;
+}
+.shutupian_one img{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.jianduispan{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.jianduispanPrice{
+    margin-left: 10px;
+}
+.mainOne{
+    margin-top:10px;
+}
+/*浏览记录的设计*/
+.yunyunde{
+    width: 210px;
+
+}
+.yunyunde span{
+    float: right;
+    font-size: 14px;
+    color: blue;
+    cursor: pointer;
+}
+/*最后购物框的填写*/
+.ziuhou{
+    border: 1px solid #dcdcdc;
+    display: flex;
+    width: 210px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+/*商品右侧设计实现*/
+.classifyTwo{
+    /*float: right;*/
+    margin-left: 40px;
+}
+/*第一块的设计实现*/
+.classifyTwo_one,.classify_TwoTwo{
+    width: 945px;
+    border-bottom: 1px solid #e4393c;
+    float: right;
+}
+.classifyTwo_one h3,.classify_TwoTwo h3{
+    width: 127px;
+    height: 32px;
+    background:#e4393c;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+}
+.classifyTwo_two{
+    padding: 50px 0 30px 0;
+}
+.classifyTwo_two span{
+    margin-right: 162px;
+     height: 30px;
+    line-height: 30px;
+}
+/*花道道线的设置*/
+.classify_TwoOne{
+    width: 945px;
+    height:10px;
+    background: url(../shoppingCartCssImages/ecsc_goods_bg.png) no-repeat;
+    margin: 50px 0;
+}
+/*商品评论和发表评论的设计*/
+.classify_TwoTwo h3{
+    float: left;
+}
+.classify_TwoTwo span{
+ float: right;
+    display: inline-block;
+    width: 88px;
+    height: 30px;
+    background: #f68a00;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+/*商品评价下面的具体内容设计*/
+.circle{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 2px solid #f68a00;
+    float: left;
+    margin: 50px 20px 0 20px;
+    text-align: center;
+    position: relative;
+}
+.circle span{
+    position: absolute;
+    font-size: 24px;
+    font-weight: 800;
+    color: #f68a00;
+    top:30px;
+    left: 9px;
+}
+.circle i {
+    position: absolute;
+    top: 50px;
+    left: 22px;
+    font-weight: 600;
+}
+.rectangle{
+    float: left;
+    margin-top: 58px;
+}
+/*100%好评右边好评、中评、差评设置*/
+.rectangle .juhuang{
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background: #f68a00;
+    margin-left: 10px;
+}
+.rectangle .zhong{
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background: #dcdcdc;
+    margin-left: 24px;
+}
+.rectangle .cha{
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background: #dcdcdc;
+    margin-left: 24px;
+}
+/*全部、好评、中评、差评设置*/
+.classify_Twofour{
+    margin-top: 40px;
+    width: 945px;
+    border-bottom: 1px solid #e4393c;
+    float: right;
+}
+.classify_Twofour li{
+    float: left;
+    padding: 0 20px;
+    border-right: 1px solid #dcdcdc;
+}
+/*创建新的div*/
+.surplus{
+    width: 945px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 255px;
+}
+.right_surplus{
+    width: 945px;
+    height:10px;
+    background: url(../shoppingCartCssImages/ecsc_goods_bg.png) no-repeat;
+    margin: 50px 0;
+    float: right;
+}
+/*网友讨论圈，晒单。。*/
+.select_surplus{
+    margin-top: 40px;
+    width: 945px;
+    border-bottom: 1px solid #e4393c;
+    float: right;
+}
+.select_surplus li{
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+    background:#e4393c;
+    margin-right: 10px;
+}
+.select_surplus li a{
+    color: #fff;
+}
+.news_surplus{
+    padding: 40px 0;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;;
+}
+.news_surplus li{
+    float: left;
+    font-weight: 600;
+}
+.news_surplus li:nth-child(1){
+    margin-right: 500px;
+}
+.news_surplus li:nth-child(2){
+    margin-right: 80px;
+}
+.news_surplus li:nth-child(3){
+    margin-right: 80px;
+}
+.huati_surplus{
+    width: 100%;
+    padding-top: 20px;
+    float: left;
+}
+.huati_surplus span{
+    float: right;
+}

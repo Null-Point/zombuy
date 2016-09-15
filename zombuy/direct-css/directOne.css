@@ -1,0 +1,87 @@
+body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,fieldset,legend{margin:0;padding:0;}
+img{border:0;dispaly:block;}
+li{list-style:none;}
+a{text-decoration:none;}
+body{font:12px/150% Arial,Verdana,"\5b8b\4f53";}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+html,body{height:100%;}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+/*开始设计送货滚轮*/
+.direct{
+    width: 415px;
+    height: 255px;
+    border: 1px solid #e23435;
+    position: absolute;
+    padding: 20px 15px;
+    z-index: 999999999999999999999;
+    background: #FFF;
+    top:30px;
+    left: 50px;
+    display: none;
+}
+.directOne{
+    overflow: hidden;
+}
+.directOne span{
+    float: left;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.directOneul{
+    float: left;
+}
+.directOneul li{
+    float: left;
+}
+.directOneul li a{
+    color: #666;
+    padding: 2px 5px;
+}
+/*字母的设置*/
+.directTwoul{
+    margin-top: 10px;
+    width: 363px;
+    overflow: hidden;
+
+}
+.directTwoula{
+    float: left;
+    padding: 2px 3px;
+}
+/*直达地址填写*/
+.directInformation{
+    width: 400px;
+    height: 200px;
+    border: 1px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+.directInformationOne{
+ position: absolute;
+    width: 400px;
+    height: 600px;
+    /*background: orange;*/
+}
+/* 第一行开始设置*/
+.informationOnediv span{
+    float: left;
+    font-size: 16px;
+    width: 18px;
+    height: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 18px;
+}
+.informationOne{
+    margin-top: 10px;
+    overflow: hidden;
+}
+.informationOneul li{
+    float: left;
+}
+.informationOneul li a{
+    padding: 4px 4px;
+}

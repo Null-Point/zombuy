@@ -1,0 +1,913 @@
+body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,fieldset,legend{margin:0;padding:0;}
+img{border:0;dispaly:block;}
+li{list-style:none;}
+a{text-decoration:none;}
+body{font:12px/150% Arial,Verdana,"\5b8b\4f53";}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+html,body{height:100%;}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+/*表头上的图片*/
+.headerImg{
+ height: 80px;
+ background: #8cd6ec;   
+}
+.headerImgScn{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.headerImgScn .imgOne{
+    float: left;
+    vertical-align: middle;
+}
+.headerImgScn #imgTwo{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    cursor: pointer;
+}
+/***************nav*******************/
+.nav{
+    height: 30px;
+    background: #efefef;
+    line-height: 30px;
+}
+.nav .navScn{
+    width: 1200px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    color:  #666;
+}
+.nav .navScn #adress{
+    position: relative;
+    /*color:  #666;*/
+    margin-left:6px; 
+}
+.nav .navScn #adress .adressImg{
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 12px;
+    background:url(../images/ecsc_icon.png) no-repeat -263px -291px;
+    right: -15px;
+}
+.nav .navScn #navClick{
+    float: left;
+}
+.nav .navScn #navClick .navSpan{
+    float: left;
+}
+.nav .navScn #navClick #adress{
+    float: left;
+}
+.nav .navScn #signLink{
+    color: #e23435;
+    float: left;
+    margin-left: 55px;
+}
+.nav .navScn #registerLink{
+    color: #666;
+    float: left;
+    margin-left: 9px;
+}
+.nav .navScn #listOption{
+    float: right;
+    margin-right: 40px;
+    position: relative;
+}
+.listOptioimg{
+    position: absolute;
+    z-index: 9999999;
+    top:30px;
+    left: -75px;
+    display: none;
+}
+.nav .navScn #listOption li{
+    float: left;
+}
+.nav .navScn #listOption .optionSpacer{
+    padding: 0 10px; 
+}
+.nav .navScn #listOption .spacer{
+    height: 12px;
+    background: #a8a8a8;
+    margin-top: 10px;
+    width: 1px;
+}
+.nav .navScn #listOption .optionNav{
+    color: #666;
+    float: left;
+}
+.nav .navScn #listOption .listOptionUl{
+    position: absolute;
+    background:url(../images/ecsc_icon.png) no-repeat -263px -291px;
+    width: 12px;
+    height: 8px;
+    top:11px; 
+    right:-10px;
+}
+.nav .navScn #shopCar{
+    width: 134px;
+    height: 40px;
+    background: url(../images/shopCar.png) no-repeat -394px -163px;
+    float: right;
+    position: relative;
+}
+.nav .navScn #shopCar i{
+    position: absolute;
+}
+.nav .navScn #shopCar .shop-left{
+    width: 18px;
+    height: 18px;
+    top:12px;
+    left:22px;
+    background: url(../images/ecsc_icon.png) no-repeat -6px -8px;
+}
+.nav .navScn #shopCar .shop-right{
+    width: 9px;
+    height: 14px;
+    font:700 13px/13px simsun;
+    color: #fff;
+    top:13px;
+    right:15px;
+}
+.nav .navScn #shopCar #shopCat{
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 60px;
+}
+.nav .navScn #shopCar .shop-count{
+    top: 2px;
+    left: 38px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #e23435;
+    border-radius: 10px;
+}
+/*********header***********/
+.sHeader{
+    width: 1200px;
+    height: 71px;
+    margin: 0 auto;
+    padding: 22px 0 0 0;
+    position: relative;
+}
+.sHeader .logoDiv{
+    position: relative;
+    width: 230px;
+    height: 58px;
+    float: left;
+}
+.sHeader .logoDiv #logoImg{
+    float: left;
+    vertical-align: middle;
+}
+.sHeader #tiaoLogo{
+    float: left;
+    width: 104px;
+    height: 58px;
+    margin-left: 40px;
+    display: inline-block;
+}
+.sHeader #ecsc-join{
+    float: left;
+    vertical-align: middle;
+}
+.sHeader #search{
+    float: left;
+    /*background: red;*/
+    padding: 10px 0 0 110px;
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+}
+.sHeader #search .titleSearchUl{
+    border:1px solid rgb(236,81,81);
+    border-right:none;
+    position: relative;
+    float: left;
+}
+.sHeader #search .titleSearchUl .shopImg{
+    position: absolute;
+    top:13px;
+    right:20px;
+    width: 12px;
+    display: inline-block;
+    height: 8px;
+    background:url(../images/ecsc_icon.png) no-repeat -263px -291px;
+}
+.sHeader #search .titleSearchUl li{
+    height: 34px;
+    width: 64px;
+    padding-left:15px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.sHeader #search .titleSearchUl .bottomShop{
+    background: rgb(236,81,81);
+}
+.sHeader #search  #inputSearch{
+    margin-top: 8px;
+    float: left;
+    border:0;
+    border-left: 1px solid #333;
+    text-indent: 0.5em;
+    outline: none;
+    width: 322px;
+}
+.sHeader #search .inputSpan{
+    height: 34px;
+    float: left;
+    border:1px solid rgb(236,81,81);
+    border-left: none;
+}
+.sHeader #search #inputBt{
+    float: left;
+    width: 61px;
+    height: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border:1px solid rgb(236,81,81);
+    border-left: none;
+    background: url(../images/sousuo.png) no-repeat;
+}
+.sHeader .fan{
+    float: right;
+    margin-top: 4px;
+    padding-right: 10px;
+    overflow: hidden;
+    height: 55px;
+}
+.sHeader .fan .fanZhuan a{
+    display: block;
+    background: url(../images/ecsc_icon.png) -404px -2px no-repeat;
+    width: 190px;
+    height: 55px;
+}
+.sHeader .fan .fanZhuan:hover{
+    transform: skew(0deg, 180deg) scale(1, 1);
+    display: none;
+}
+.sHeader #bottomSearch{
+    position: absolute;
+    top:72px;
+    left: 477px;
+}
+.sHeader .bottomSearchUl .bottomSearchLi{
+    float: left;
+}
+.sHeader .bottomSearchUl .bottomSearchLi a{
+    padding: 0 13px;
+    border-right: 1px solid #666;
+    color: #666;
+}
+.sHeader .bottomSearchUl .bottomSearchLi a:hover{
+    border-right:1px solid  rgb(236,81,81);
+    color:  rgb(236,81,81);
+}
+/*导航First的设置*/
+.navFirst .navFirstScn{
+    width: 690px;
+    margin: 0 auto;
+}
+/*banner轮播图*/
+.banner .bannerScn{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.banner .bannerScn .bannerScnOne{
+ float: left;
+}
+.banner .bannerScn .bannerScnTwo{
+    float: left;
+    margin-left: 232px;
+    margin-top: -18px;
+    z-index: 10;
+}
+.banner .bannerScn .bannerScnFour{
+    background: #efefef;
+    padding: 20px 15px;
+    float: right;
+    margin-top: -13px;
+    width: 208px;
+    position: relative;
+}
+/*右侧时间的设置*/
+.banner .bannerScn .bannerScnFour .heiSe{
+    background: #efefef;
+    color:#999;
+    width: 15px;
+    height: 15px;
+  }
+.banner .bannerScn .bannerScnFour span{
+    display: inline-block;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    background: #333;
+}
+.banner .bannerScn .bannerScnFour h3{
+    font-weight: 600;
+}
+.banner .bannerScn .bannerScnFour .spanList{
+      text-align: center;
+      margin-bottom:22px;
+      margin-top:5px;
+}
+.banner .bannerScn .bannerScnFour .bannerScnFourPrice{
+    color: #ec5151;
+    font-size: 18px;
+    background: #efefef;
+}
+.banner .bannerScn .bannerScnFour .bannerScnFourDelte{
+  margin-left:50px;
+}
+.banner .bannerScn .bannerScnFour .bannerScnFourText{
+    display: inline-block;
+    width: 100px;
+    background: #efefef;
+    color:#999;
+    margin-left: 78px;
+}
+.banner .bannerScn .bannerScnFour #bannerScnFourBt{
+        display: inline-block;
+        width: 80px;
+        height: 28px;
+        background:#ec5151;
+        border-radius:5px;
+        cursor: pointer;
+        position: absolute;
+        right:8px;
+        text-align: center;
+        font-weight: 600;
+ }
+.banner .bannerScn .bannerScnFive{
+    margin-top: 1px;
+    float: right;
+    width: 238px;
+    background: #efefef;
+    position: relative;
+}
+.banner .bannerScn .bannerScnFive a{
+ text-decoration: none;
+}
+.banner .bannerScn .bannerScnFive .bannerScnFiveliOne,.banner .bannerScn .bannerScnFive .bannerScnFiveliTwo{
+     float: left;
+     width: 119px;
+     text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    cursor: pointer;
+ }
+.banner .bannerScn .bannerScnFive .bannerScnFiveliThree{
+    display: inline-block;
+      padding-top:10px;
+      text-indent: 28px;
+       height:193px;
+       display: block;
+}
+.banner .bannerScn .bannerScnFive .bannerScnFiveliFour{
+    display: inline-block;
+    text-indent: 28px;
+    padding-top:10px;
+    height:193px;
+    display: none;
+}
+.bannerScnFiveP{
+    color: #333;
+}
+.banner .bannerScn .bannerScnFive .bannerScnFiveP{
+    cursor: pointer;
+    margin-left: 60px;
+}
+.banner .bannerScn .bannerScnFive .bannerScnFiveImg{
+    margin-top: 10px;
+}
+.banner .bannerScn .bannerScnThree{
+    position: absolute;
+    top:367px;
+    left:238px;
+}
+/*主要内容*/
+.newsTop{
+}
+.newsTopScn{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.newsTopScn .newsTopScnOneul{
+    overflow: hidden;
+    border-bottom:1px solid red;
+}
+.newsTopScn .newsTopScnOneli{
+    float: left;
+    padding-right:20px;
+    height: 60px;
+    border-radius: 2px;
+}
+.newsTopScn .newsTopScnOneli a{
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 80px;
+}
+.newsTopScn .newsTopScnOneli:hover{
+    border-bottom:3px solid red;
+}
+.newsTopScn .newsTopScnOneli a:hover{
+    color: red;
+}
+.newsTopScnOne{
+    margin-bottom:20px;
+    width: 500px;
+}
+.newsTopScnThree{
+    height: 281px;
+    width: 226px;
+    background: red;
+    position: absolute;
+    right: 0;
+    top:40px;
+}
+/*品牌街*/
+.pinpaiScn{
+    padding: 40px 0;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.pinpaiScn h3{
+    text-indent: 30px;
+    height: 30px;
+    line-height: 25px;
+    border-bottom: 1px solid red;
+}
+.pinpaiScni{
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/tuu.png) 0 0 no-repeat;
+}
+.pinpaiScnHuaFeng{
+    margin-top: 20px;
+}
+.pinpaiScnHuaFengul{
+    width: 917px;
+}
+.pinpaiScnHuaFengli{
+    float: left;
+    height: 57px;
+    border: 1px solid #dcdcdc;
+    border-right:0.5px solid #dcdcdc;
+}
+.pinpaiScnHuaFengli:hover{
+    border-color: red;
+}
+.pinpaiScniRight{
+    float:right;
+    margin-top: -60px;
+    margin-bottom: 15px;
+}
+/*每周   新品*/
+.everyNewsScn{
+   width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+.everyNewsScni{
+    text-align: center;
+    line-height: 28px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    position: absolute;
+    top:-4px;
+    background: url(../images/hourse.png) no-repeat;
+}
+.everyNewsScnh3{
+  text-indent: 40px;
+    font-weight: 600;
+    border-bottom:1px solid red;
+}
+/*T恤模板下面的内容*/
+.mainNewsScn{
+    width: 1200px;
+    height: 622px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.mainNewsScnOneLeft{
+    float: left;
+ }
+.mainNewsScnOneright{
+    /*background: red;*/
+    right: 0;
+}
+.mainNewsScnOne{
+    position: relative;
+    width: 342px;
+}
+.mainNewsScnOneMain{
+    width: 160px;
+    height: 490px;
+    background: #dcdcdc;
+    position: absolute;
+    opacity: 0.5;
+}
+.mainNewsScnOneMain span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+   padding-left: 50px;
+    cursor: pointer;
+}
+.mainNewsScnOneMainSpan{
+position: absolute;
+    width: 160px;
+    height: 490px;
+    background: #FFF;
+    /*background: red;*/
+    opacity: 1;
+    top:0;
+    left: 160px;
+    display: none;
+}
+.mainNewsScnOneMainSpan p{
+    text-align: center;
+    height:40px;
+}
+/*第二块设计*/
+.mainNewsScnTwo{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 748px;
+}
+.mainNewsScnTwoul{
+ position: absolute;
+    right: -15px;
+}
+.mainNewsScnTwoli{
+    float:left;
+    width: 186px;
+    text-align: center;
+    margin: 0;
+    padding: 11px 0;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.mainNewsScnTwoli p{
+    margin-left: 16px;
+    width: 147px;
+    text-indent: 5px;
+    margin-bottom: 10px;
+}
+.mainNewsScnTwoliimg{
+    width: 140px;
+    height:140px;
+}
+.mainNewsScnTwoliOne{
+    padding-top: 5px;
+    color: red;
+    font-size: 18px;
+}
+/*第三个块设计*/
+.mainNewsScnThree{
+    position: absolute;
+    bottom:0;
+}
+.mainNewsScnThreeimg{
+    float: left;
+    border: 1px solid #efefef;
+ }
+.mainNewsScnThreedianji{
+    width: 1200px;
+    height: 110px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+/*猜你喜欢设置*/
+.cainixihuan{
+    color: #666;
+}
+.caini{
+    overflow: hidden;
+}
+.cainiScn{
+    width: 1200px;
+    margin: 0 auto;
+}
+.cainiScnOne{
+    float: left;
+    width: 134px;
+    height: 369px;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.cainiScnTwo{
+    float: left;
+    width: 397px;
+    height: 369px;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.cainiScnThree{
+    float: left;
+}
+.cainiScnFour{
+    float: left;
+}
+.cainiScnP{
+    background: #f2f2f2;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #333;
+}
+.same{
+    text-align: center;
+    width: 78px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    margin:  10px auto;
+   cursor: pointer;
+}
+.same:hover{
+    background: darkred;
+    color: #fff;
+}
+.cainiScnTwoOdiv{
+    width: 330px;
+    height: 330px;
+    padding: 0 33px;
+}
+.cainiScnTwoOdivImg{
+    float: left;
+    width: 110px;
+    height: 110px;
+    /*position: relative;*/
+}
+.cainiScnTwoOdivSpan{
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: #333333;
+    opacity: 0.8;
+    left: -110px;
+    text-align: center;
+}
+.cainiScnTwoOdivSpan p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.standard{
+    width: 110px;
+    height: 110px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.stangardp{
+    margin-top: 45px;
+}
+.cainiScnThree{
+    width: 380px;
+    height: 369px;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.cainiScnFour{
+    width: 286px;
+    height: 369px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.cainiScnThreeNeiRong{
+    padding: 20px 15px 60px 15px ;
+}
+.cainiScnThreeNeiRongimg{
+    width: 244px;
+    height: 118px;
+    float: left;
+}
+.cainiScnThreeNeiRongTwoimg{
+    width: 90px;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.dongmanshuwu{
+    width: 70px;
+    height: 12px;
+    float: left;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+.enterBt{
+    width: 65px;
+    height: 22px;
+    float: left;
+    padding-top: 33px;
+    margin-left: 10px;
+}
+.enterBta{
+    display: block;
+    background: #ec5151;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 65px;
+    text-align: center;
+}
+.cainiScnFouK{
+    padding: 17px 28px 0px 32px;
+}
+.foottop{
+   overflow: hidden;
+   background: #dddddd;
+    margin-top: 100px;
+}
+.foottopScn{
+    width: 1200px;
+    margin: 0 auto;
+}
+.foottopScn div{
+    float: left;
+    width: 132px;
+    height: 85px;
+    margin-right: 135px;
+    margin-top: 30px;
+}
+.foottopScn span{
+    font-size: 16px;
+    height: 16px;
+    width: 64px;
+    line-height: 45px;
+    font-weight: 600;
+}
+.foottopScn i{
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+.foottopScnOnei{
+    background: url(../images/title1.png) no-repeat;
+}
+.foottopScnTwoi{
+    background: url(../images/title2.png) no-repeat;
+}
+.foottopScnThreei{
+    background: url(../images/title3.png) no-repeat;
+}
+.foottopScnFouri{
+    background: url(../images/title4.png) no-repeat;
+}
+.foottopScnFivei{
+    background: url(../images/title5.png) no-repeat;
+}
+/*页脚*/
+.foot{
+    height: 352px;
+    background: #000;
+}
+.footScn{
+    width: 1200px;
+    height: 352px;
+    margin: 0 auto;
+    position: relative;
+}
+.footScnOne li{
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 136px;
+    padding-top: 60px;
+}
+.footScnTwo{
+    position: absolute;
+    top:90px;
+    left: 8px;
+}
+.footScnTwo li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnThree{
+    position: absolute;
+    top:90px;
+    left: 207px;
+}
+.footScnThree li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnFour{
+    position: absolute;
+    top:90px;
+    left: 420px;
+}
+.footScnFour li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnFive{
+    position: absolute;
+    top:90px;
+    left: 620px;
+}
+.footScnFive li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnSix{
+    position: absolute;
+    top:90px;
+    left: 840px;
+}
+.footScnSix li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.erweima{
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    right: 0;
+    top:50px;
+}
+.erweima a{
+    display: inline-block;
+    width:74px;
+    font-size: 18px;
+    text-align: center;
+}
+.erweimaOne{
+    background: black;
+    color: red;
+}
+.erweimaTwo{
+    background: #dddddd;
+    color: #fff;
+}
+.footScnServen{
+    position: absolute;
+    top: 240px;
+    left: 398px;
+
+}
+.footScnServen li{
+  float: left;
+}
+.footScnServen li a{
+    /*color: #fff;*/
+    padding: 0 5px;
+    border-right: 1px solid #ddd;
+}
+.footScnServen li a:hover{
+    color: #fff;
+}
+.footScnP{
+    position: absolute;
+    top:265px;
+    left: 521px;
+}
+.footScnP span{
+    color: #ec5051;
+}
+.footScnEight{
+    position: absolute;
+    top:292px;
+    left: 315px;
+}
+.footScnEight li{
+    float: left;
+    padding:0 8px;
+}

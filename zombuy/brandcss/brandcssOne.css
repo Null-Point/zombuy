@@ -1,0 +1,492 @@
+body,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,fieldset,legend{margin:0;padding:0;}
+img{border:0;dispaly:block;}
+li{list-style:none;}
+a{text-decoration:none;}
+body{font:12px/150% Arial,Verdana,"\5b8b\4f53";}
+h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+html,body{height:100%;}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.nav{
+    height: 30px;
+    background: #efefef;
+    line-height: 30px;
+}
+.nav .navScn{
+    width: 1200px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    color:  #666;
+}
+.nav .navScn #adress{
+    position: relative;
+    /*color:  #666;*/
+    margin-left:6px;
+}
+.nav .navScn #adress .adressImg{
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 12px;
+    background:url(../brandimages/ecsc_icon.png) no-repeat -263px -291px;
+    right: -15px;
+}
+.nav .navScn #navClick{
+    float: left;
+}
+.nav .navScn #navClick .navSpan{
+    float: left;
+}
+.nav .navScn #navClick #adress{
+    float: left;
+}
+.nav .navScn #signLink{
+    color: #e23435;
+    float: left;
+    margin-left: 55px;
+}
+.nav .navScn #registerLink{
+    color: #666;
+    float: left;
+    margin-left: 9px;
+}
+.nav .navScn #listOption{
+    float: right;
+    margin-right: 40px;
+    position: relative;
+}
+.listOptioimg{
+    position: absolute;
+    z-index: 9999999;
+    top:30px;
+    left: -75px;
+    display: none;
+}
+.nav .navScn #listOption li{
+    float: left;
+}
+.nav .navScn #listOption .optionSpacer{
+    padding: 0 10px;
+}
+.nav .navScn #listOption .spacer{
+    height: 12px;
+    background: #a8a8a8;
+    margin-top: 10px;
+    width: 1px;
+}
+.nav .navScn #listOption .optionNav{
+    color: #666;
+    float: left;
+}
+.nav .navScn #listOption .listOptionUl{
+    position: absolute;
+    background:url(../brandimages/ecsc_icon.png) no-repeat -263px -291px;
+    width: 12px;
+    height: 8px;
+    top:11px;
+    right:-10px;
+}
+.nav .navScn #shopCar{
+    width: 134px;
+    height: 40px;
+    background: url(../brandimages/shopCar.png) no-repeat -394px -163px;
+    float: right;
+    position: relative;
+}
+.nav .navScn #shopCar i{
+    position: absolute;
+}
+.nav .navScn #shopCar .shop-left{
+    width: 18px;
+    height: 18px;
+    top:12px;
+    left:22px;
+    background: url(../brandimages/ecsc_icon.png) no-repeat -6px -8px;
+}
+.nav .navScn #shopCar .shop-right{
+    width: 9px;
+    height: 14px;
+    font:700 13px/13px simsun;
+    color: #fff;
+    top:13px;
+    right:15px;
+}
+.nav .navScn #shopCar #shopCat{
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 60px;
+}
+.nav .navScn #shopCar .shop-count{
+    top: 2px;
+    left: 38px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #e23435;
+    border-radius: 10px;
+}
+/*********header***********/
+.sHeader{
+    width: 1200px;
+    height: 71px;
+    margin: 0 auto;
+    padding: 22px 0 0 0;
+    position: relative;
+}
+.sHeader .logoDiv{
+    position: relative;
+    width: 230px;
+    height: 58px;
+    float: left;
+}
+.sHeader .logoDiv #logoImg{
+    float: left;
+    vertical-align: middle;
+}
+.sHeader #tiaoLogo{
+    float: left;
+    width: 104px;
+    height: 58px;
+    margin-left: 40px;
+    display: inline-block;
+}
+.sHeader #ecsc-join{
+    float: left;
+    vertical-align: middle;
+}
+.sHeader #search{
+    float: left;
+    /*background: red;*/
+    padding: 10px 0 0 110px;
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+}
+.sHeader #search .titleSearchUl{
+    border:1px solid rgb(236,81,81);
+    border-right:none;
+    position: relative;
+    float: left;
+}
+.sHeader #search .titleSearchUl .shopImg{
+    position: absolute;
+    top:13px;
+    right:20px;
+    width: 12px;
+    display: inline-block;
+    height: 8px;
+    background:url(../brandimages/ecsc_icon.png) no-repeat -263px -291px;
+}
+.sHeader #search .titleSearchUl li{
+    height: 34px;
+    width: 64px;
+    padding-left:15px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.sHeader #search .titleSearchUl .bottomShop{
+    background: rgb(236,81,81);
+}
+.sHeader #search  #inputSearch{
+    margin-top: 8px;
+    float: left;
+    border:0;
+    border-left: 1px solid #333;
+    text-indent: 0.5em;
+    outline: none;
+    width: 322px;
+}
+.sHeader #search .inputSpan{
+    height: 34px;
+    float: left;
+    border:1px solid rgb(236,81,81);
+    border-left: none;
+}
+.sHeader #search #inputBt{
+    float: left;
+    width: 61px;
+    height: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border:1px solid rgb(236,81,81);
+    border-left: none;
+    background: url(../brandimages/sousuo.png) no-repeat;
+}
+.sHeader .fan{
+    float: right;
+    margin-top: 4px;
+    padding-right: 10px;
+    overflow: hidden;
+    height: 55px;
+}
+.sHeader .fan .fanZhuan a{
+    display: block;
+    background: url(../brandimages/ecsc_icon.png) -404px -2px no-repeat;
+    width: 190px;
+    height: 55px;
+}
+.sHeader .fan .fanZhuan:hover{
+    transform: skew(0deg, 180deg) scale(1, 1);
+    display: none;
+}
+.sHeader #bottomSearch{
+    position: absolute;
+    top:72px;
+    left: 477px;
+}
+.sHeader .bottomSearchUl .bottomSearchLi{
+    float: left;
+}
+.sHeader .bottomSearchUl .bottomSearchLi a{
+    padding: 0 13px;
+    border-right: 1px solid #666;
+    color: #666;
+}
+.sHeader .bottomSearchUl .bottomSearchLi a:hover{
+    border-right:1px solid  rgb(236,81,81);
+    color:  rgb(236,81,81);
+}
+/*导航*/
+/*导航First的设置*/
+.navFirst .navFirstScn{
+    width: 690px;
+    margin: 0 auto;
+}
+/*banner*/
+.banner{
+    background:#fbe8ed;
+    position: relative;
+}
+.bannerScn{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.banner .bannerScn .bannerScnOne {
+    float: left;
+}
+.tiaoPi{
+    padding-bottom: 12px;
+}
+.tiaoPia{
+    margin-right: 27px;
+}
+.hengXian{
+    border-top: 1px solid #333;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    background:#fbe8ed;
+    /*margin-top: -10px;*/
+    top:-11px;
+}
+/******************************/
+.foottop{
+    overflow: hidden;
+    background: #dddddd;
+    margin-top: 100px;
+}
+.foottopScn{
+    width: 1200px;
+    margin: 0 auto;
+}
+.foottopScn div{
+    float: left;
+    width: 132px;
+    height: 85px;
+    margin-right: 135px;
+    margin-top: 30px;
+}
+.foottopScn span{
+    font-size: 16px;
+    height: 16px;
+    width: 64px;
+    line-height: 45px;
+    font-weight: 600;
+}
+.foottopScn i{
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+.foottopScnOnei{
+    background: url(../brandimages/title1.png) no-repeat;
+}
+.foottopScnTwoi{
+    background: url(../brandimages/title2.png) no-repeat;
+}
+.foottopScnThreei{
+    background: url(../brandimages/title3.png) no-repeat;
+}
+.foottopScnFouri{
+    background: url(../brandimages/title4.png) no-repeat;
+}
+.foottopScnFivei{
+    background: url(../brandimages/title5.png) no-repeat;
+}
+/*购物页详情*/
+.shoppingCart{
+    width: 1200px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    position: relative;
+}
+.shoppingCartSpan{
+    padding: 4px;
+    border: 1px solid #dcdcdc;
+}
+.shoppingCartSpan:hover{
+    border: 1px solid #cd0606;
+}
+.shoppingCartSpanPrice{
+    /*position: relative;*/
+}
+.shoppingCartSpanPricebutto{
+    position: absolute;
+    width: 265px;
+    height: 50px;
+    top:24px;
+    left: 43px;
+    display: none;
+    border-radius: 3px;
+    /*background: red;*/
+    border: 1px solid #cd0606;
+}
+.shoppingCartSpanPricebutto a{
+    padding: 0 3px;
+    line-height: 50px;
+}
+.yuanzhikong{
+    display: inline-block;
+    height: 50px;
+    padding-top: 3px;
+    background: #fff;
+}
+/*页脚*/
+.foot{
+    height: 352px;
+    background: #000;
+}
+.footScn{
+    width: 1200px;
+    height: 352px;
+    margin: 0 auto;
+    position: relative;
+}
+.footScnOne li{
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 136px;
+    padding-top: 60px;
+}
+.footScnTwo{
+    position: absolute;
+    top:90px;
+    left: 8px;
+}
+.footScnTwo li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnThree{
+    position: absolute;
+    top:90px;
+    left: 207px;
+}
+.footScnThree li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnFour{
+    position: absolute;
+    top:90px;
+    left: 420px;
+}
+.footScnFour li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnFive{
+    position: absolute;
+    top:90px;
+    left: 620px;
+}
+.footScnFive li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footScnSix{
+    position: absolute;
+    top:90px;
+    left: 840px;
+}
+.footScnSix li{
+    font-size: 12px;
+    font-weight: 600;
+}
+.erweima{
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    right: 0;
+    top:50px;
+}
+.erweima a{
+    display: inline-block;
+    width:74px;
+    font-size: 18px;
+    text-align: center;
+}
+.erweimaOne{
+    background: black;
+    color: red;
+}
+.erweimaTwo{
+    background: #dddddd;
+    color: #fff;
+}
+.footScnServen{
+    position: absolute;
+    top: 240px;
+    left: 398px;
+
+}
+.footScnServen li{
+    float: left;
+}
+.footScnServen li a{
+    /*color: #fff;*/
+    padding: 0 5px;
+    border-right: 1px solid #ddd;
+}
+.footScnServen li a:hover{
+    color: #fff;
+}
+.footScnP{
+    position: absolute;
+    top:265px;
+    left: 521px;
+}
+.footScnP span{
+    color: #ec5051;
+}
+.footScnEight{
+    position: absolute;
+    top:292px;
+    left: 315px;
+}
+.footScnEight li{
+    float: left;
+    padding:0 8px;
+}

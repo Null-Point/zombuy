@@ -1,0 +1,34 @@
+
+.lunboMain{
+    width: 960px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+.lunbo{
+    width: 2500px;
+    position: absolute;
+    height: 240px;
+
+}
+.lunboli{
+    float: left;
+    list-style: none;
+}
+.lunboMain span{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 60px;
+    background: #333;
+    z-index: 99999;
+    cursor: pointer;
+}
+.lunboSpanOne{
+    top: 120px;
+    left: 10px;
+}
+.lunboSpanTwo{
+    top:120px;
+    right: 10px;
+}

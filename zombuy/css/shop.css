@@ -1,0 +1,16 @@
+.weiYi {
+    position: relative;
+}
+.weiYi .weiYiImg{
+    position: absolute;
+    width: 260px;
+    right: 0;
+    top:0;
+}
+.weiYi .weiYiImg .weiYiTu{
+    width: 129px;
+    float: right;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}

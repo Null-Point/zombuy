@@ -1,0 +1,42 @@
+#div1{
+    width:730px;
+    height: 380px;
+    background: red;
+    margin: 5px auto;
+    position: relative;
+    overflow: hidden;
+}
+#div2{
+    width: 1000px;
+    height: 320px;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.imgli,.imgliimg{
+    float: left;
+}
+.imgul{
+    width:4100px;
+    list-style: none;
+}
+.navul{
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 270px;
+    left: 600px;
+    list-style: none;
+}
+.navul li{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border:1px solid red;
+    margin-left: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navul li .lion{
+    background: blue;
+}
