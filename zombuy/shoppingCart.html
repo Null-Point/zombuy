@@ -1223,14 +1223,19 @@
             <span>市场价：</span><del>￥178.79</del><br/>
             <span>手机购买：</span><span id="wei_xinS">手机二维码扫描</span><img class="weixin_code" src="shoppingCartCssImages/weixin_code_1164.png"/>
         </div>
-        <span>配送：</span><span class="youhuo">有货,</span><span>下单后立即发货</span><br/>
+        <span>配送：</span><input type="text" value="北京&nbsp;北京&nbsp;昌平区"><span class="youhuo">有货,</span><span>下单后立即发货</span><br/>
         <span>服务：</span><span>由<a href="#">周末自营</a>发货并提供售后服务。</span><b>[快递：￥0.00]</b>
         <span>可用：</span><span>49667积分</span><br/>
         <span>数量：</span><span>库存：155</span><br/>
         <a  id="leftBuy" href="#">立即购买</a>
         <a  id="rightBuy" href="#">加入购物车</a>
     </div>
-    <div class="nesThree"></div>
+    <div id="nesThree">
+        <p class="nesThree_one"><a href="#"><img src="shoppingCartCssImages/logo.jpg"></a></p>
+        <p class="nesThree_two"><a href="#">周末自营</a><i id="bt_i"></i></p>
+        <p class="nesThree_three"><span>品牌：舰队COllection</span><br/><span>所在地：湖北武汉市</span></p>
+        <p class="nesThree_four"><span>在线客服</span></p>
+    </div>
 </div>
 <!--相关分类-->
 <div class="classify">
@@ -1871,5 +1876,27 @@
 <script src="shoppingCartJs/classifyOne_three.js"></script>
 <!--引入显示二维码的JS-->
 <script src="shoppingCartJs/weixin.js"></script>
+<!--右边客服弹框的滑动-->
+<script>
+    var nesThree_four=document.getElementsByClassName("nesThree_four")[0];
+    var flag=true;
+    var bt_i=document.getElementById("bt_i");
+    bt_i.onclick=function () {
+        if(flag){
+            var target={
+                top:97,
+            }
+            move(nesThree_four,target);
+            flag=false;
+        }else {
+            var target={
+                top:159,
+            }
+            move(nesThree_four,target);
+            flag=true;
+        }
+
+    }
+</script>
 </body>
 </html>

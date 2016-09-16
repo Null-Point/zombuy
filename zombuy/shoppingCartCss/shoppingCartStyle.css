@@ -5,7 +5,7 @@
 }
 .nesOne{
     position: relative;
-    z-index: 999999999999999;
+    z-index: 999;
 }
 .nes div{
     float: left;
@@ -18,12 +18,71 @@
     font-size:16px;
     font-weight: 600;
 }
+/*设置"nesTwo下面的spand的设置*/
+.nesTwo span{
+    line-height: 30px;
+}
 .nesTwoNews{
     background: #f7f7f7;
     width: 100%;
     padding: 10px;
     position: relative;
     /*z-index: -100;*/
+}
+/*右边第三块摸板设计*/
+#nesThree{
+    float: right;
+    position: relative;
+}
+#nesThree .nesThree_one{
+    text-align: center;
+    width: 210px;
+    height: 60px;
+    border: 1px solid #dcdcdc;
+}
+.nesThree_two{
+    width: 170px;
+    height: 33px;
+    padding: 0 20px;
+    border: 1px solid #dcdcdc;
+}
+.nesThree_two i{
+    margin-top: 10px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../shoppingCartCssImages/xiabiao.png) no-repeat;
+    float: right;
+ }
+.nesThree_two a{
+    margin-left: 60px;
+}
+.nesThree_three{
+    width: 210px;
+    height: 61px;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+}
+.nesThree_four{
+    width: 210px;
+    height: 61px;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    position: absolute;
+    top: 159px;
+    background: #fff;
+}
+.nesThree_four span{
+    display: inline-block;
+    width: 93px;
+    height: 28px;
+    background: #ec5051;
+    color: #fff;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    /*background: url(../shoppingCartCssImages/kefu.png) no-repeat;*/
 }
 /*修改newTwoNews里面的span上下的距离*/
 .nesTwoNews span{
@@ -52,6 +111,7 @@
     line-height: 40px;
     text-align: center;
     border-radius: 5px;
+    margin-top: 20px;margin-right: 20px;
 }
 #rightBuy{
     display: inline-block;

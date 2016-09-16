@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="managementCss/managementStyle.css"/>
+    <link rel="stylesheet" href="managementCss/animate.css"/>
+    <script src="managementJs/startMoveEX.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <h1>周末动漫后台管理系统</h1>
+</div>
+<!--左边-->
+<div class="left">
+    <div class="left_one font">首页
+        <ul class="left_oneul">
+            <li><a href="#">查询</a></li>
+            <li><a href="#">修改</a></li>
+            <li><a href="#">添加</a></li>
+            <li><a href="#">删除</a></li>
+        </ul>
+    </div>
+    <div class="left_two font">品牌</div>
+    <div class="left_three font">详情页</div>
+    <div class="left_four font">购物车</div>
+</div>
+<!--右边-->
+<div class="right"></div>
+<!--首页的滑动-->
+<script>
+    var left_one=document.getElementsByClassName("left_one")[0];
+    var left_oneul=document.getElementsByClassName("left_oneul")[0];
+    var flagOne=true;
+    left_one.onclick=function () {
+        if(flagOne){
+            left_oneul.style.display="block";
+            var target={
+                left:0
+            }
+            move(left_oneul,target);
+            flagOne=false;
+        }else {
+            left_oneul.style.display="none";
+            var target={
+                left:-126
+            }
+            move(left_oneul,target);
+            flagOne=true;
+        }
+    }
+</script>
+</body>
+</html>
