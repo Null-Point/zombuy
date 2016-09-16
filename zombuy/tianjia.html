@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页添加</title>
+    <script src="managementJs/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<label>商品ID：</label>&nbsp;&nbsp;&nbsp;<input type="text" id="shop_id"/><br/><br/>
+<label>商品类型：</label>&nbsp;&nbsp;<input type="text" id="type_id"/><br/><br/>
+<label>商品图片路径：</label><input type="text" id="src_id"/><br/><br/>
+<label>商品描述：</label>&nbsp;&nbsp;<input type="text" id="describ_id"/><br/><br/>
+<label>商品价格：</label>&nbsp;&nbsp;<input type="text" id="price_id"/><br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="summit_id" value="提交"/>
+</body>
+<script>
+    $("#summit_id").click(function () {
+        var shop_id=$("#shop_id").val();
+        var type_id=$("#type_id").val();
+        var src_id=$("#src_id").val();
+        var describ_id=$("#describ_id").val();
+        var price_id=$("#price_id").val();
+        var jsonDate={
+            "shop_id":shop_id,
+            "type_id":type_id,
+            "src_id":src_id,
+            "describ_id":describ_id,
+            "price_id":price_id
+        };
+        var stringJson=JSON.stringify(jsonDate);
+        console.log(stringJson);
+        $.get("http://localhost:8080/product/CreateUpdateProduct_get?id="+shop_id+"&datajson="+stringJson);
+    })
+</script>
+</html>

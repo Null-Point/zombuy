@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页查询</title>
+    <script src="managementJs/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="managementCss/animate.css"/>
+    <style>
+        table{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #333;
+        }
+        td{
+            text-align: center;
+        }
+        .tiaozhuan{
+            position: absolute;
+            z-index: 999999999999;
+            background: #333;
+            color: #fff;
+            font-family: "微软雅黑", "黑体";
+            left: 100px;
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<input id="news_id" type="text">
+<input  id="bt_Search" type="button" value="Search"/>
+<table>
+    <tr>
+        <th>商品ID</th>
+        <th>商品类型</th>
+        <th>商品图片路径</th>
+        <th>商品描述</th>
+        <th>商品价格</th>
+        <th>删除选项</th>
+        <th>修改选项</th>
+    </tr>
+</table>
+<div class="tiaozhuan">
+    <label>商品ID：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="shop_id"/><br/><br/>
+    <label>商品类型：</label>&nbsp;&nbsp;<input type="text" id="type_id"/><br/><br/>
+    <label>图片路径：</label>&nbsp;&nbsp;<input type="text" id="src_id"/><br/><br/>
+    <label>商品描述：</label>&nbsp;&nbsp;<input type="text" id="describ_id"/><br/><br/>
+    <label>商品价格：</label>&nbsp;&nbsp;<input type="text" id="price_id"/><br/><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="summit_id" value="提交"/>
+</div>
+<script>
+    $("#bt_Search").click(function () {
+        var news_id=$("#news_id").val();
+        var table=$("table")
+        $.get("http://localhost:8080/product/GetProductById_get?"+"id="+news_id,callback);
+        function callback(date){
+            var dateObject=JSON.parse(date);
+//            console.log(dateObject);
+            var jsonObject=JSON.parse(dateObject.Data);
+            $("<tr>" +
+                    "<td class='subId'>" +
+                    jsonObject.shop_id +
+                    "</td>" +
+                    "<td>" +
+                    jsonObject.type_id+
+                    "</td>" +
+                    "<td>" +
+                    jsonObject.src_id +
+                    "</td>" +
+                    "<td>" +
+                    jsonObject.describ_id +
+                    "</td>" +
+                    "<td>" +
+                    jsonObject.price_id +
+                    "</td>" +
+                    "<td>" +
+                    "<input class='del_id' type='button'value='删除'>" +
+                    "</td>" +
+                    "<td>" +
+                    "<input class='xiu_id' type='button' value='修改'>" +
+                    "</td>" +
+                    "</tr>").appendTo(table);
+            $(".del_id").click(function () {
+                var delIs=$(this).parent().siblings(".subId").text();
+                $.get("http://localhost:8080/product/DeleteProductById_get?id="+delIs);
+                $(this).parent().parent().remove();
+          });
+            $(".xiu_id").click(function () {
+                $(".tiaozhuan").css({"display":"block","animation":"bounceInLeft 4s"});
+            })
+        }
+    })
+
+</script>
+<!--修改按钮的接口-->
+<script>
+    $("#summit_id").click(function () {
+        var shop_id=$("#shop_id").val();
+        var type_id=$("#type_id").val();
+        var src_id=$("#src_id").val();
+        var describ_id=$("#describ_id").val();
+        var price_id=$("#price_id").val();
+        var jsonDate={
+            "shop_id":shop_id,
+            "type_id":type_id,
+            "src_id":src_id,
+            "describ_id":describ_id,
+            "price_id":price_id
+        };
+        var stringJson=JSON.stringify(jsonDate);
+        console.log(stringJson);
+        $.get("http://localhost:8080/product/CreateUpdateProduct_get?id="+shop_id+"&datajson="+stringJson);
+        $(".tiaozhuan").css({"display":"none"});
+    })
+</script>
+</body>
+</html>

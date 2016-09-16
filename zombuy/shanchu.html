@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页删除</title>
+    <script src="managementJs/jquery-3.1.0.min.js"></script>
+    <style>
+        table{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<input id="news_id" type="text" value="输入要删除的商品ID">
+<input id="del" type="button" value="删除"/>
+<script>
+    $("#bt_Search").click(function () {
+        var news_id=$("#news_id").val();
+        $.get("http://localhost:8080/product/GetProductById_get?"+"id="+news_id,callback);
+        function callback(date){
+            var dateObject=JSON.parse(date);
+//            console.log(dateObject);
+            var jsonObject=JSON.parse(dateObject.Data)
+            console.log(jsonObject.shop_id);
+        }
+    })
+
+</script>
+<!--删除功能-->
+<script>
+    $("#del").click(function () {
+        var news_id=$("#news_id").val();
+        $.get("http://localhost:8080/product/DeleteProductById_get?id="+news_id);
+        document.write("删除成功！");
+    })
+    $("#news_id").focus(function () {
+        $(this).val("");
+    })
+</script>
+</body>
+</html>

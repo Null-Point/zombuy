@@ -16,23 +16,57 @@
 <div class="left">
     <div class="left_one font">首页
         <ul class="left_oneul">
+            <li><a href="chaxun.html" target="rt">查询</a></li>
+            <li><a href="#">修改</a></li>
+            <li><a href="tianjia.html" target="rt">添加</a></li>
+            <li><a href="shanchu.html" target="rt">删除</a></li>
+        </ul>
+    </div>
+    <div class="left_two font">品牌
+        <ul class="left_twoul">
             <li><a href="#">查询</a></li>
             <li><a href="#">修改</a></li>
             <li><a href="#">添加</a></li>
             <li><a href="#">删除</a></li>
         </ul>
     </div>
-    <div class="left_two font">品牌</div>
-    <div class="left_three font">详情页</div>
-    <div class="left_four font">购物车</div>
+    <div class="left_three font">详情页
+        <ul class="left_threeul">
+            <li><a href="#">查询</a></li>
+            <li><a href="#">修改</a></li>
+            <li><a href="#">添加</a></li>
+            <li><a href="#">删除</a></li>
+        </ul>
+    </div>
+    <div class="left_four font">购物车
+        <ul class="left_fourul">
+            <li><a href="#">查询</a></li>
+            <li><a href="#">修改</a></li>
+            <li><a href="#">添加</a></li>
+            <li><a href="#">删除</a></li>
+        </ul>
+    </div>
 </div>
 <!--右边-->
-<div class="right"></div>
+<div class="right">
+    <iframe width="100%" height="100%" frameborder="1" name="rt">
+
+    </iframe>
+</div>
 <!--首页的滑动-->
 <script>
     var left_one=document.getElementsByClassName("left_one")[0];
+    var left_two=document.getElementsByClassName("left_two")[0];
+    var left_three=document.getElementsByClassName("left_three")[0];
+    var left_four=document.getElementsByClassName("left_four")[0];
     var left_oneul=document.getElementsByClassName("left_oneul")[0];
+    var left_twoul=document.getElementsByClassName("left_twoul")[0];
+    var left_threeul=document.getElementsByClassName("left_threeul")[0];
+    var left_fourul=document.getElementsByClassName("left_fourul")[0];
     var flagOne=true;
+    var flagtwo=true;
+    var flagthree=true;
+    var flagfour=true;
     left_one.onclick=function () {
         if(flagOne){
             left_oneul.style.display="block";
@@ -48,6 +82,57 @@
             }
             move(left_oneul,target);
             flagOne=true;
+        }
+    }
+    left_two.onclick=function () {
+        if(flagtwo){
+            left_twoul.style.display="block";
+            var target={
+                left:0
+            }
+            move(left_twoul,target);
+            flagtwo=false;
+        }else {
+            left_twoul.style.display="none";
+            var target={
+                left:-126
+            }
+            move(left_twoul,target);
+            flagtwo=true;
+        }
+    }
+    left_three.onclick=function () {
+        if(flagthree){
+            left_threeul.style.display="block";
+            var target={
+                left:0
+            }
+            move(left_threeul,target);
+            flagthree=false;
+        }else {
+            left_threeul.style.display="none";
+            var target={
+                left:-126
+            }
+            move(left_threeul,target);
+            flagthree=true;
+        }
+    }
+    left_four.onclick=function () {
+        if(flagfour){
+            left_fourul.style.display="block";
+            var target={
+                left:0
+            }
+            move(left_fourul,target);
+            flagfour=false;
+        }else {
+            left_fourul.style.display="none";
+            var target={
+                left:-126
+            }
+            move(left_fourul,target);
+            flagfour=true;
         }
     }
 </script>
