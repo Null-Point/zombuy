@@ -1,0 +1,219 @@
+/*热门推荐里面图片的设置*/
+.tiaoPi_T{
+background: #fff;
+    padding: 15px;
+    width: 280px;
+  /*overflow: hidden;*/
+    position: relative;
+    height: 109px;
+}
+.tiaoPi_T img{
+    width: 112px;
+    height: 112px;
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+.tiaoPi_T p,.tiaoPi_T a,.tiaoPi_T span{
+  /*position: absolute;*/
+    float: left;
+}
+.tiaoPi_T .p_one{
+    top:-10px;
+}
+.tiaoPi .price_one{
+    color: #ec5051;
+    font-size: 16px;
+    font-weight: 600;
+}
+.tiaoPi a{
+    display: block;
+    width: 76px;
+    height: 32px;
+    background: url(../luggageImages/1.png) no-repeat;
+    margin:5px 0 0 40px;
+    text-align: center;
+    line-height: 32px;
+}
+.tiaoPi a:hover{
+    background: url(../luggageImages/2.png) no-repeat;
+    color: #fff;
+}
+.tiaoPi .rm{
+    width: 40px;
+    height: 126px;
+    background: #ec5051;
+    color: #fff;
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+    left: -75px;
+    top:0;
+}
+/*箱包*/
+.xb_h3{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.xb_h3 h3{
+   font-size: 16px;
+    font-weight: 600;
+}
+/*箱包下面品牌的设置*/
+.brand{
+    background:#fbe8ed;
+    overflow: hidden;
+}
+.brandScn{
+    width: 1160px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.brandScn li img{
+    display: inline-block;
+    width: 98px;
+    height: 44px;
+}
+.brandScn li{
+    float: left;
+}
+.brandScn li img:hover{
+    animation: bounce  3s;
+}
+/*默认、销量、新品、评论数、价格设置*/
+.rank{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*margin: 10px 0;*/
+    padding: 30px 0 10px 0;
+}
+.rank li{
+    float: left;
+    border: 1px solid #333;
+}
+.rank li{
+    padding: 5px 10px;
+}
+.rank li .price_va{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    border: 1px solid #333;
+    outline: none;
+}
+/*内容的获取*/
+#article{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*内容的设置*/
+#article .luggageImg{
+    float: left;
+    width: 97px;
+    height: 97px;
+}
+#article .lug_div{
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+}
+#article .lug_span{
+    margin-left: 20px;
+    float: left;
+}
+#article .shoucang_i i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../luggageImages/3.png) no-repeat;
+    margin-left: 20px;
+}
+#article .ziying_i i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../luggageImages/4.png) no-repeat;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+#article .ke_fu i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../luggageImages/5.png) no-repeat;
+    margin-left: 40px;
+}
+#article .price_i{
+     font-size: 18px;
+    font-weight: 600;
+    color: #ec5051;
+    margin-left: 470px;
+    /*margin-top: -10px;*/
+}
+#article .lug_aL{
+    float: right;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+#article .lug_input{
+    float: right;
+    width: 45px;
+    height: 24px;
+    border: 0;
+    border: 1px solid #dcdcdc;
+    outline: none;
+}
+#article .lug_aR{
+    float: right;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+#article .count{
+    position: absolute;
+    top:57px;
+    right:209px;
+}
+.prompt{
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    background: #f9e5c8;
+    color: #ec5051;
+    text-align: center;
+    top:52px;
+    right:116px;
+    border-radius: 3px;
+    line-height: 35px;
+}
+.addition{
+position: absolute;
+    width: 98px;
+    height: 35px;
+    background: #e23435;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 35px;
+    top:52px;
+    right: 5px;
+}
+/*ID 的设置*/
+.lugshop_id{
+    position: absolute;
+    top:52px;
+    right:5px;
+    z-index: -1;
+}

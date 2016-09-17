@@ -1,0 +1,48 @@
+.closure{
+    overflow: hidden;
+    border-top:1px solid #e23435;
+    margin-top: 40px;
+}
+.closureScn{
+    width: 1200px;
+    margin: 0 auto;
+}
+.closure_one{
+    float: right;
+}
+.closureScn_one{
+ padding: 15px 0;
+}
+/*全选设置*/
+.closureScn_two{
+   background: #eee;
+    padding: 20px 0 20px 10px;
+}
+.closureScn_two span{
+    margin-right: 162px;
+}
+#closureScn_three{
+ padding: 10px;
+    position: relative;
+}
+#closureScn_three .cookImg{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+/*新创建物品的设置*/
+#closureScn_three{
+    float: left;
+}
+.cook_div{
+    padding: 10px;
+    overflow: hidden;
+}
+.span_loop{
+    margin-left: 20px;
+}
+.price_loop{
+    margin-left: 133px;
+    font-size: 14px;
+    font-weight: 600;
+}
