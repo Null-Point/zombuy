@@ -40,9 +40,101 @@
 }
 .span_loop{
     margin-left: 20px;
+    float: left;
 }
 .price_loop{
     margin-left: 133px;
     font-size: 14px;
     font-weight: 600;
+    float: left;
+}
+/*判断数量的整合*/
+.loop_le{
+    float: left;
+    border: 1px solid #dcdcdc;
+    width: 26px;
+    height: 22px;
+    margin-left: 116px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.loop_input{
+    float: left;
+    width: 30px;
+    height: 22px;
+    border: none;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+
+}
+.loop_ri{
+    float: left;
+    width: 26px;
+    height: 22px;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.subtotal{
+    font-size: 18px;
+    font-weight: 600;
+    color:#e23435;
+    margin-left: 137px;
+    position: absolute;
+    right: -168px;
+    text-align: center;
+    width: 80px;
+}
+.del_loop{
+    position: absolute;
+    right:-272px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #939393;
+}
+/*结算设置*/
+.balanceScn{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.balanceScn span{
+    float: right;
+}
+.balanceScn .reveal{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #dcdcdc;
+    animation:rubberBand 5s infinite;
+    text-align: center;
+    font-size: 24px;
+    line-height: 100px;
+}
+.balanceScn .js{
+    border: 1px solid #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+.balanceScn .js i{
+    width: 50px;
+    height: 50px;
+    background: #e23435;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
 }
